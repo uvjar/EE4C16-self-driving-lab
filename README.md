@@ -15,8 +15,8 @@ input commands.
 
 You will upload this training data (the images + the input commands)
 to the GCP clusters and train a CNN to predict the steering angle
-command given the front view image. Thus the input of your CNN is an
-image and the output is the steering angle.
+command from the front view image alone. Thus, the input of your CNN
+is an image and the output is the steering angle.
 
 You will then download back the trained model onto your lab machine so
 that you can run the car simulation in autonomous mode.
@@ -24,7 +24,8 @@ that you can run the car simulation in autonomous mode.
 ## Preparing your lab machine
 
 1. Download and extract the ZIP of this repo (download link
-[here](https://github.com/frcs/EE4C16-self-driving-lab/archive/master.zip))
+[here](https://github.com/frcs/EE4C16-self-driving-lab/archive/master.zip)). Rename
+this folder `self-driving-lab`.
 
 2. If you are on the Lab machines, start the anaconda prompt
 
