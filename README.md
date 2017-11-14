@@ -37,7 +37,7 @@ Networks.
     [miniconda](https://conda.io/miniconda.html) to use the
     environment setting.
 
-	If you have a modern GPU, you can try:
+	If you have a modern GPU, you can even try:
 
 	```python
     # Use TensorFlow with GPU (on your own computer)
@@ -56,14 +56,13 @@ Networks.
 1. Start up the Udacity self-driving simulator, choose the *lake*
 scene and press the Training Mode button.
 
-2. Then press `R key` and select the **data** folder, where our
+2. Then press `R key` and select the **data** folder, where your
 training images and CSV will be stored.
 
 3. Press R again to start recording and R to stop recording. Let the
 processing of video complete.
 
-4. You should do somewhere between 1 and 5 laps of the simulated road
-track.
+4. You should do around 1 to 5 laps of the lake track.
 
 
 ### Run in autonomous mode
