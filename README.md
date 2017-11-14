@@ -22,9 +22,15 @@ Networks.
 
 3. then go to the extracted directory and then type:
 
-```python
+```bash
 conda env create -f environments.yml
 ```
+
+Then activate the environment. On windows you'll do:
+```bash
+activate 4c16
+```
+
 
 This will take a while, so in the meantime, go a play with the
 similator (see step 4).
@@ -61,15 +67,20 @@ processing of video complete.
 
 4. You should do around 1 to 5 laps of the lake track.
 
-5. Zip the directory and upload the zip file to your cluster using the Jupyter notebook
+5. Zip both `driving_log.csv` file and `IMG` directory into a zip file
+called `recordings.zip`. Upload `recordings.zip` to the root of the
+`lab-06` directory of your cluster using the Jupyter notebook.
 
-6. unzip the data using the command line
+6. On the cluster, type these commands to unzip the file:
 ```bash
-tar xvf {file.zip}
+!rm -rf IMG
+!unzip -o -qq recordings.zip
+driving_log = './driving_log.csv'
 ```
 
 ### Train the data
 
+check the jupyter notebook for instructions.
 
 
 ### Run in autonomous mode
