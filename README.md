@@ -15,34 +15,33 @@ Networks.
 
 ## Dependencies
 
-1. Download and extract the ZIP of this repo 
+1. Download and extract the ZIP of this repo (download link [here](https://github.com/frcs/EE4C16-self-driving-lab/archive/master.zip))
 
-2. Install all dependencies. First start the anaconda prompt and go to the extracted directory:
+2. Start the anaconda prompt
 
 ![anaconda](/images/anaconda-start.jpg)
 
-	and then type:
+3.  go to the extracted directory and then type:
 
-    ```python
-    # Use TensorFlow without GPU (for the CADLAb machines)
-    conda env create -f environments.yml
-	```
-	This will take a while, so in the meantime, go a play with the
-	similator (see step 2).
+```python
+conda env create -f environments.yml
+```
 
-	If you want to install this on your machine, you will need
-    [anaconda](https://www.continuum.io/downloads) or
-    [miniconda](https://conda.io/miniconda.html) to use the
-    environment setting.
+This will take a while, so in the meantime, go a play with the
+similator (see step 2).
 
-	If you have a modern GPU, you can even try:
+If you want to install this on your machine, you will need
+[anaconda](https://www.continuum.io/downloads) or
+[miniconda](https://conda.io/miniconda.html) to use the
+environment setting.
 
-	```python
-    # Use TensorFlow with GPU (on your own computer)
-    conda env create -f environment-gpu.yml
-    ```
+If you have a modern GPU, you can even try:
 
- 2. Download our modified Udacity's self driving car simulator:
+```python
+conda env create -f environment-gpu.yml
+```
+
+2. Download our modified Udacity's self driving car simulator:
 
 *  [win64](https://drive.google.com/file/d/1vs_AbhXxPVL1fjCbRiKItR0U432ANRyh)
 *  [linux64](https://drive.google.com/file/d/1ABdmMtDHMl_bRSTyDyH2zqdURkzzl93y)
