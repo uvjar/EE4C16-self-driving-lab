@@ -68,11 +68,11 @@ processing of video complete.
 4. You should do around 1 to 5 laps of the lake track.
 
 5. Zip both `driving_log.csv` file and `IMG` directory into a zip file
-called `recordings.zip`. Upload `recordings.zip` to the root of the
+called `recordings.zip`. Upload `recordings.zip` to the 
 `lab-06` directory of your cluster using the Jupyter notebook.
 
-6. On the cluster, type these commands to unzip the file:
-```bash
+6. On the cluster, type these commands in the notebook to unzip the file:
+```python
 !rm -rf IMG
 !unzip -o -qq recordings.zip
 driving_log = './driving_log.csv'
