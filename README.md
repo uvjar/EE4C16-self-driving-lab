@@ -4,23 +4,24 @@
 
 This lab is based on Udacity's [self driving car
 simulator](https://github.com/udacity/self-driving-car-sim), which is
-a nice testbed for training autonomous car using Convolutional Neural
+a nice tool for training autonomous car using Convolutional Neural
 Networks.
 
 ## Udacity Self Driving Car
 
 ![Simulated Self Driving Car Project Demo](/images/screenshot.jpg)
 
-
 ## Dependencies
 
-1. Download and extract the ZIP of this repo (download link [here](https://github.com/frcs/EE4C16-self-driving-lab/archive/master.zip))
+1. Download and extract the ZIP of this repo (download link
+[here](https://github.com/frcs/EE4C16-self-driving-lab/archive/master.zip))
 
 2. If you are on the Lab machines, start the anaconda prompt
 
 ![anaconda](/images/anaconda-start.jpg)
 
-3. then go to the extracted directory and then type:
+3. then in your conda prompt, go to the extracted directory (let's
+call it `self-driving-lab`) and then type:
 
 ```bash
 conda env create -f environments.yml
@@ -31,18 +32,13 @@ Then activate the environment. On windows you'll do:
 activate 4c16
 ```
 
-
 This will take a while, so in the meantime, go a play with the
-similator (see step 4).
+simulator (see step 4).
 
 If you want to install this on your machine, you will need
 [anaconda](https://www.continuum.io/downloads) or
 [miniconda](https://conda.io/miniconda.html) to use the
-environment setting. If you have a modern GPU, you can even try:
-
-```python
-conda env create -f environment-gpu.yml
-```
+environment setting. 
 
 4. Download our modified Udacity's self driving car simulator:
 
@@ -80,16 +76,26 @@ driving_log = './driving_log.csv'
 
 ### Train the data
 
-check the jupyter notebook for instructions.
-
+check the Jupyter notebook for instructions.
 
 ### Run in autonomous mode
 
-1. The run the following command:
+1. Once you have trained your model and saved the weights in
+`model.h5`. Download the weights back to your lab machine in the
+`self-driving-lab` directory.
+
+2. Start up the Udacity self-driving simulator, choose the **lake**
+(left) scene and press the Autonomous Mode button.
+
+3. In your conda prompt type 
 
 ```python
-python drive.py model-mix.h5
+python drive.py model.h5
 ```
+
+4. When the autonomous ride is over, drive.py will produce a file
+called `car_positions.npz`. Upload that file to your cluster and add
+it to your git for assessment.
 
 
 ## Links
