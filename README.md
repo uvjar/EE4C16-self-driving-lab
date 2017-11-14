@@ -71,7 +71,7 @@ processing of video complete.
 called `recordings.zip`. Upload `recordings.zip` to the 
 `lab-06` directory of your cluster using the Jupyter notebook.
 
-6. On the cluster, type these commands in the notebook to unzip the file:
+6. On the cluster, these commands in the notebook will unzip the file:
 ```python
 !rm -rf IMG
 !unzip -o -qq recordings.zip
