@@ -51,7 +51,7 @@ If you want to install this on your machine, you will need
 [miniconda](https://conda.io/miniconda.html) to use the
 environment setting. 
 
-4. Download our modified Udacity's self driving car simulator:
+4. Download our modified Udacity's self driving car simulator.
 
 On the Lab machines, you will find a copy on `c:\4c16`. Otherwise you
 can download a version for your system here:
@@ -64,18 +64,18 @@ can download a version for your system here:
 ### Collecting the training data
 
 1. Start up the Udacity self-driving simulator, choose the **lake**
-scene and press the Training Mode button.
+scene (left) and press the Training Mode button.
 
 2. Then press `R key` and select the **data** folder, where your
 training images and CSV will be stored.
 
-3. Press R again to start recording and R to stop recording. Let the
-processing of video complete.
+3. Press R again to start recording and R to stop recording and wait
+for the processing of video to complete.
 
 4. You should do around 1 to 5 laps of the lake track.
 
 5. Zip both `driving_log.csv` file and `IMG` directory into a zip file
-called `recordings.zip`. Upload `recordings.zip` to the 
+that you will name `recordings.zip`. Upload `recordings.zip` inside the 
 `lab-06` directory of your cluster using the Jupyter notebook.
 
 6. On the cluster, these commands in the notebook will unzip the file:
@@ -85,7 +85,7 @@ called `recordings.zip`. Upload `recordings.zip` to the
 driving_log = './driving_log.csv'
 ```
 
-### Train the data
+### Training your CNN
 
 check the Jupyter notebook for instructions.
 
