@@ -41,6 +41,8 @@ conda env create -f environment-gpu.yml
 
 4. Download our modified Udacity's self driving car simulator:
 
+On the Lab machines, you will find a copy on `c:\4c16`.
+
 *  [win64](https://drive.google.com/file/d/1vs_AbhXxPVL1fjCbRiKItR0U432ANRyh)
 *  [linux64](https://drive.google.com/file/d/1ABdmMtDHMl_bRSTyDyH2zqdURkzzl93y)
 *  [OSX](https://drive.google.com/open?id=1qqt_Q8pZqQFpvn9xHRMc002ABq-tQQDK)
