@@ -9,7 +9,8 @@ Networks.
 
 ## Udacity Self Driving Car
 
-[Simulated Self Driving Car Project Demo](images/screenshot.jpg)
+[[Simulated Self Driving Car Project Demo|alt=screenshot]]
+
 
 ## Dependencies
 
