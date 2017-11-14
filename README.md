@@ -19,7 +19,7 @@ Networks.
     [miniconda](https://conda.io/miniconda.html) to use the
     environment setting.
 
-	[](images/anaconda-start.jpg)
+	[[images/anaconda-start.jpg|alt=screenshot]]
 
 
     ```python
