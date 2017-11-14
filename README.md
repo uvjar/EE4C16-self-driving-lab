@@ -31,8 +31,8 @@ this folder `self-driving-lab`.
 
 ![anaconda](/images/anaconda-start.jpg)
 
-3. then in your conda prompt, go to the extracted directory (let's
-call it `self-driving-lab`) and then type:
+3. then in your conda prompt, go to the extracted `self-driving-lab`
+directory and then type:
 
 ```bash
 conda env create -f environments.yml
