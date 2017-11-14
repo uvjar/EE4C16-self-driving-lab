@@ -1,4 +1,4 @@
-# EE4c16 - Behavioral Cloning Lab
+# EE4C16 - Self Driving Car Lab
 
 ## Overview
 
@@ -10,7 +10,6 @@ Networks.
 ## Udacity Self Driving Car
 
 ![Simulated Self Driving Car Project Demo](/images/screenshot.jpg)
-
 
 
 ## Dependencies
