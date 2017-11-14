@@ -65,23 +65,14 @@ processing of video complete.
 4. You should do somewhere between 1 and 5 laps of the simulated road
 track.
 
-# 5. The run the following command:
 
-#     ```python
-#     python model-mix.py
-#     ```
+### Run in autonomous mode
 
-# This will generate a file `model-<epoch>.h5` whenever the performance in the epoch is better than the previous best.  For example, the first epoch will generate a file called `model-000.h5`.
+1. The run the following command:
 
-### Run the pretrained model
-
-# Once you have trained a model, we'll run the Autonomous Mode. 
-
-# ```python
-# python drive.py model-mix.h5
-# ```
-
-
+```python
+python drive.py model-mix.h5
+```
 
 
 ## Vote of Thanks
