@@ -9,9 +9,7 @@ Networks.
 
 ## Udacity Self Driving Car
 
-[[Simulated Self Driving Car Project Demo|alt=screenshot]]
-
-
+![Simulated Self Driving Car Project Demo](/images/screenshot.jpg)
 
 
 
@@ -21,7 +19,7 @@ Networks.
 
 2. Install all dependencies. First start the anaconda prompt and go to the extracted directory:
 
-	[[images/anaconda-start.jpg|alt=screenshot]]
+![anaconda](/images/anaconda-start.jpg)
 
 	and then type:
 
