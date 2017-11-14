@@ -43,7 +43,7 @@ Then activate the environment. On windows you'll do:
 activate 4c16
 ```
 
-This will take a while, so in the meantime, go a play with the
+This will take a while, so in the meantime, let's play with the
 simulator (see step 4).
 
 If you want to install this on your machine, you will need
