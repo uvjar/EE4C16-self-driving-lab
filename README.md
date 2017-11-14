@@ -66,6 +66,8 @@ processing of video complete.
 tar xvf {file.zip}
 ```
 
+### Train the data
+
 
 
 ### Run in autonomous mode
@@ -77,11 +79,11 @@ python drive.py model-mix.h5
 ```
 
 
-## Acknowledgements
+## Links
 
 NVIDIA's paper: [End to End Learning for Self-Driving Cars](http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf) for the inspiration and model structure.
 
-[Siraj Raval](https://github.com/llsourcell) & [naokishibuya](https://github.com/naokishibuya) for the knowledge and code help.
+[Siraj Raval](https://github.com/llsourcell) & [naokishibuya](https://github.com/naokishibuya)
 
 
 
