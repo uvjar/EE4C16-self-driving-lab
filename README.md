@@ -4,14 +4,24 @@
 
 This lab is based on Udacity's [self driving car
 simulator](https://github.com/udacity/self-driving-car-sim), which is
-a nice tool for training autonomous car using Convolutional Neural
+a nice testbed for training autonomous car using Convolutional Neural
 Networks.
-
-## Udacity Self Driving Car
 
 ![Simulated Self Driving Car Project Demo](/images/screenshot.jpg)
 
-## Dependencies
+The simulator, written in Unity, allows you to drive a car around a
+track and record a video of the front view of the ride as well as the
+input commands.
+
+You will upload this training data (the images + the input commands)
+to the GCP clusters and train a CNN to predict the steering angle
+command given the front view image. Thus the input of your CNN is an
+image and the output is the steering angle.
+
+You will then download back the trained model onto your lab machine so
+that you can run the car simulation in autonomous mode.
+
+## Preparing your lab machine
 
 1. Download and extract the ZIP of this repo (download link
 [here](https://github.com/frcs/EE4C16-self-driving-lab/archive/master.zip))
