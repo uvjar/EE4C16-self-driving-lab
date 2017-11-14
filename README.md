@@ -17,40 +17,38 @@ Networks.
 
 1. Download and extract the ZIP of this repo (download link [here](https://github.com/frcs/EE4C16-self-driving-lab/archive/master.zip))
 
-2. Start the anaconda prompt
+2. If you are on the Lab machines, start the anaconda prompt
 
 ![anaconda](/images/anaconda-start.jpg)
 
-3.  go to the extracted directory and then type:
+3. then go to the extracted directory and then type:
 
 ```python
 conda env create -f environments.yml
 ```
 
 This will take a while, so in the meantime, go a play with the
-similator (see step 2).
+similator (see step 4).
 
 If you want to install this on your machine, you will need
 [anaconda](https://www.continuum.io/downloads) or
 [miniconda](https://conda.io/miniconda.html) to use the
-environment setting.
-
-If you have a modern GPU, you can even try:
+environment setting. If you have a modern GPU, you can even try:
 
 ```python
 conda env create -f environment-gpu.yml
 ```
 
-2. Download our modified Udacity's self driving car simulator:
+4. Download our modified Udacity's self driving car simulator:
 
 *  [win64](https://drive.google.com/file/d/1vs_AbhXxPVL1fjCbRiKItR0U432ANRyh)
 *  [linux64](https://drive.google.com/file/d/1ABdmMtDHMl_bRSTyDyH2zqdURkzzl93y)
 *  [OSX](https://drive.google.com/open?id=1qqt_Q8pZqQFpvn9xHRMc002ABq-tQQDK)
 
 
-### To train the model
+### Collecting the training data
 
-1. Start up the Udacity self-driving simulator, choose the *lake*
+1. Start up the Udacity self-driving simulator, choose the **lake**
 scene and press the Training Mode button.
 
 2. Then press `R key` and select the **data** folder, where your
@@ -60,6 +58,14 @@ training images and CSV will be stored.
 processing of video complete.
 
 4. You should do around 1 to 5 laps of the lake track.
+
+5. Zip the directory and upload the zip file to your cluster using the Jupyter notebook
+
+6. unzip the data using the command line
+```bash
+tar xvf {file.zip}
+```
+
 
 
 ### Run in autonomous mode
