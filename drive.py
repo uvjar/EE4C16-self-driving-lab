@@ -40,7 +40,6 @@ def telemetry(sid, data):
         x, y, z = parse_position(data["Position"])
 
         if no_manual_input:
-            print([x,y,z])
             recorded_points.append([x, y, z])
 
         speed = float(data["speed"])
