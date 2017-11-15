@@ -29,6 +29,7 @@ speed_limit = MAX_SPEED
 
 recorded_points = []
 lap_definition = None
+no_manual_input = True
 
 @sio.on('telemetry')
 def telemetry(sid, data):
@@ -39,11 +40,9 @@ def telemetry(sid, data):
         # throttle = float(data["throttle"])
 
         x, y, z = parse_position(data["Position"])
-        recorded_points.append([x, y, z])
 
-        if lap_definition is not None:
-            completion = find_completion([x,y,z], lap_definition)
-            sys.stderr.write("\rTrack position: {0:3.2f}%".format(completion * 100))
+        if no_manual_input: 
+            recorded_points.append([x, y, z])
 
         speed = float(data["speed"])
         image = Image.open(BytesIO(base64.b64decode(data["image"])))
@@ -72,6 +71,7 @@ def telemetry(sid, data):
             image_filename = os.path.join(args.image_folder, timestamp)
             lycon.save(path='{}.jpg'.format(image_filename), image=image)
     else:
+        no_manual_input = False
         sio.emit('manual', data={}, skip_sid=True)
 
 
