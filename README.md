@@ -104,10 +104,13 @@ check the Jupyter notebook for instructions.
 python drive.py model.h5
 ```
 
-4. When the autonomous ride is over, drive.py will produce a file
-called `car_positions.npz`. Upload that file to your cluster and add
-it to your git for assessment.
+and watch.
 
+4. when you want to stop the simulation or get stuck, close the simulator window. Check in the prompt window that the outout file `car_positions.npz` has been saved. Type `ctrl-c`. It may take a while before  `ctrl-c` has an effect.
+
+Check that the output file is in your directory and uplaod
+`car_positions.npz` to your cluster and add it to your git for
+assessment.
 
 ## Links
 
