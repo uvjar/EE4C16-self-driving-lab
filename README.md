@@ -35,7 +35,7 @@ this folder `self-driving-lab`.
 directory and then type:
 
 ```bash
-conda env create -f environments.yml
+conda env create -f environment.yml
 ```
 
 Then activate the environment. On windows you'll do:
