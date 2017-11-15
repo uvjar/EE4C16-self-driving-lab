@@ -112,7 +112,10 @@ python drive.py model.h5
 
 and watch.
 
-4. when you want to stop the simulation or get stuck, close the simulator window. Check in the prompt window that the outout file `car_positions.npz` has been saved. Type `ctrl-c`. It may take a while before  `ctrl-c` has an effect.
+4. to stop the simulation: close the simulator window. Check in the
+prompt window that the outout file `car_positions.npz` has been
+saved. Type `ctrl-c`. It may take a while before `ctrl-c` has an
+effect.
 
 Check that the output file is in your directory and uplaod
 `car_positions.npz` to your cluster and add it to your git for
