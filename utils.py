@@ -1,4 +1,4 @@
-import lycon
+import PIL
 import numpy as np
 
 def parse_position(position_str):
@@ -15,18 +15,9 @@ def parse_position(position_str):
 def preprocess_image(image):
     IMAGE_WIDTH = 200
     IMAGE_HEIGHT = 66
-    image = image[50:140, :, :]
-    image = lycon.resize(image, width=IMAGE_WIDTH, height=IMAGE_HEIGHT, interpolation=lycon.Interpolation.CUBIC)
+
+    w, h = image.size
+    image = image.crop((0, 50, w, 140))
+    image = image.resize((200, 66), PIL.Image.BICUBIC)
     return image
 
-
-def find_completion(point, arr=None):
-    if arr is None:
-        return None
-
-    N, _ = np.shape(arr)
-    tmp = arr - point
-    tmp = tmp**2
-    tmp = np.sum(tmp, axis=-1)
-    idx = np.argmin(tmp)
-    return idx/N

@@ -14,8 +14,7 @@ from flask import Flask
 from io import BytesIO
 
 from keras.models import load_model
-import lycon
-from utils import parse_position, preprocess_image, find_completion
+from utils import parse_position, preprocess_image
 
 sio = socketio.Server()
 app = Flask(__name__)
@@ -34,23 +33,23 @@ no_manual_input = True
 @sio.on('telemetry')
 def telemetry(sid, data):
     global recorded_points
+    global no_manual_input
 
     if data:
-        # steering_angle = float(data["steering_angle"])
-        # throttle = float(data["throttle"])
 
         x, y, z = parse_position(data["Position"])
 
-        if no_manual_input: 
+        if no_manual_input:
+            print([x,y,z])
             recorded_points.append([x, y, z])
 
         speed = float(data["speed"])
         image = Image.open(BytesIO(base64.b64decode(data["image"])))
         try:
-            image = np.asarray(image)
+    
             image = preprocess_image(image)
-            image = np.array([image])
-            image = 2.0*image/255 - 1
+            image = np.array([np.asarray(image)])
+            image = 2.0 * image / 255 - 1.0
 
             steering_angle = float(model.predict(image, batch_size=1))
 
