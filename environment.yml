@@ -10,4 +10,4 @@ dependencies:
         - h5py
         - tensorflow
         - keras
-        - lycon
+
