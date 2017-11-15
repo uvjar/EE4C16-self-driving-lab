@@ -53,7 +53,7 @@ environment setting.
 
 4. Download our modified Udacity's self driving car simulator.
 
-On the Lab machines, you will find a copy on `c:\4c16`. Otherwise you
+On the Lab machines, you will find a copy on `c:\4c16 Car\`. Otherwise you
 can download a version for your system here:
 
 *  [win64](https://drive.google.com/file/d/1vs_AbhXxPVL1fjCbRiKItR0U432ANRyh)
